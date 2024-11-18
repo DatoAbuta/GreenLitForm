@@ -5,11 +5,13 @@ import USA from "../../public/images/usa.svg";
 import GEO from "../../public/images/geo.svg";
 import building from "../../public/images/building-2.svg";
 import mail from "../../public/images/mail.svg";
+import BG from "../../public/images/background.svg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 p-8">
-      <div className="bg-green-50 p-[30px] rounded-[20px] shadow-lg w-full md:max-w-[470px] min-h-[652px] flex-grow h-[600px]">
+    <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 p-8 relative">
+      <Image src={BG} alt="" className="absolute z-0 bottom-5"/>
+      <div className="bg-green-50 p-[30px] rounded-[20px] shadow-lg w-full md:max-w-[470px] min-h-[652px] flex-grow h-[600px] z-10">
         <h2 className="text-black text-2xl font-medium leading-normal mb-4">
           Get In Touch!
         </h2>
@@ -71,7 +73,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="bg-green-50 pt-5 pb-[28px] pr-[28px] pl-5 rounded-lg shadow-lg w-full md:w-3/5 h-[534px] self-end flex flex-col md:flex-row items-center md:items-start">
+      <div className="bg-green-50 pt-5 pb-[28px] pr-[28px] pl-5 rounded-lg shadow-lg w-full md:w-3/5 h-[534px] self-end flex flex-col md:flex-row items-center md:items-start z-10">
         <div className="space-y-4 w-full md:w-1/2">
           <h2 className="text-xl font-bold mb-2 text-gray-800">Locations</h2>
           <p className="text-gray-600 mb-6">
