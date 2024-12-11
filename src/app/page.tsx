@@ -110,7 +110,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Location Map Image */}
         <div className="mt-8 md:mt-0 md:ml-8 w-[365px] h-[300px]">
           <Image
             src={Location}
